@@ -1,5 +1,12 @@
 #PowerShell Profile file
 
+# For Windows #-----------------------------------------------------------------
+# Create the file ~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+# and add
+# Load relocated profile file
+# . ~\.config\PowerShell\Profile.ps1
+# ------------------------------------------------------------------------------
+
 # Set PowerShell folder location #----------------------------------------------
 $PowerShellDir = "~\.config\PowerShell"
 
