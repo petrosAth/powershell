@@ -1,7 +1,7 @@
 # Change Debugging flag value #-------------------------------------------------
 
-#Set Debugging flag
-Function SetDebugging {
+# Set Debugging flag
+Function Set-Debugging {
     if (isAdmin) {
         if (("True", "False").contains($args[0])) {
             $value = $args[0]

@@ -1,8 +1,8 @@
 # Administrator rights test #---------------------------------------------------
 
+# Source - https://megamorf.gitlab.io/2020/05/26/check-if-powershell-is-running-as-administrator/
 function isAdmin {
-    $user = [Security.Principal.WindowsIdentity]::GetCurrent();
-    (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+    [Security.Principal.WindowsIdentity]::GetCurrent().Groups -contains 'S-1-5-32-544'
 }
 
 # Debugging #==-----------------------------------------------------------------

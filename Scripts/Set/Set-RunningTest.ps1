@@ -1,7 +1,7 @@
 # Change Running flag value #---------------------------------------------------
 
-#Set RunningTest flag
-Function SetRunningTest {
+# Set Running-Test flag
+Function Set-RunningTest {
     if (isAdmin) {
         if (("True", "False").contains($args[0])) {
             $value = $args[0]

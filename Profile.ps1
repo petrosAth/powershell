@@ -26,15 +26,15 @@ if ($Debugging -Or $RunningTest) {$LoadedScriptsList = @{}}
 # Load scripts #----------------------------------------------------------------
 #Load scripts from "Utility" folder
 $UtilityScriptsList = @(
-        "Paths.ps1"
-        "ScriptStatus.ps1"
-        ) | ForEach-Object {. (Join-Path "$PowerShellDir\Scripts\Utility\" $_)}
+    "Paths.ps1"
+    "ScriptStatus.ps1"
+) | ForEach-Object {. (Join-Path "$PowerShellDir\Scripts\Utility\" $_)}
 
 #Load scripts from "Scripts", "Set" and "Test" folder
 $ScriptsList = @(
-        "$ScriptsDir\"
-        "$SetDir\"
-        "$TestDir\"
+    "$ScriptsDir\"
+    "$SetDir\"
+    "$TestDir\"
 ) | ForEach-Object {Get-ChildItem ("$_" + "*.ps1") | ForEach-Object {. $_}}
 
 #Load scripts from "Themes" folder

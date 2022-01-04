@@ -1,12 +1,12 @@
 # Command for setting new theme #-----------------------------------------------
 
-#List of themes
+# List of themes
 $ThemesList = @(
     "Dracula"
 )
 
-#SetTheme command. Modify Default-Theme.ps1 file and change the startup theme to the new one.
-Function SetTheme {
+# Modify Default-Theme.ps1 file and change the startup theme to the new one.
+Function Set-Theme {
     $theme = $args[0]
 
     if ($ThemesList.contains($theme)) {
@@ -29,8 +29,8 @@ Function SetTheme {
     }
 }
 
-#Set theme for the current instance
-. SetTheme $DefaultTheme
+# Set theme for the current instance
+. Set-Theme $DefaultTheme
 
 # Debugging #-------------------------------------------------------------------
 if ($Debugging) {
