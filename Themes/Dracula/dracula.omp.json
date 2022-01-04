@@ -1,0 +1,273 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+	"blocks": [
+		{
+		"type": "prompt",
+		"alignment": "left",
+		"segments": [
+            {
+                "type": "exit",
+                "style": "plain",
+                "foreground": "#50FA7B",
+                "properties": {
+                    "display_exit_code": false,
+                    "always_enabled": true,
+                    "error_color": "#FF5555",
+                    "prefix": "",
+                    "postfix": "┬"
+                }
+            },
+			{
+				"type": "os",
+				"style": "plain",
+				"foreground": "#BD93F9",
+				"properties": {
+					"windows": "\ue70f",
+					"macos": "\ue711",
+					"linux": "\ue712",
+					"alpine": "\uf300",
+					"arch": "\uf303",
+					"centos": "\uf304",
+					"debian": "\uf306",
+					"elementary": "\uf309",
+					"manjaro": "\uf312",
+					"opensuse": "\uf314",
+					"raspbian": "\uf315",
+					"fedora": "\uf30a",
+					"gentoo": "\uf30d",
+					"mint": "\uf30f",
+					"ubuntu": "\uf31c",
+					"wsl": "\ue712",
+					"wsl_separator": " on ",
+					"prefix": "[",
+					"postfix": "]"
+				}
+			},
+			{
+				"type": "shell",
+				"style": "plain",
+				"foreground": "#BD93F9",
+				"properties": {
+					"prefix": "[ ",
+					"postfix": "]"
+				}
+			},
+			{
+				"type": "path",
+				"style": "plain",
+				"foreground": "#8be9fd",
+				"properties": {
+					"style": "full",
+					"prefix": "<#BD93F9>[</>",
+					"postfix": "<#BD93F9>]</>"
+				}
+			},
+			{
+				"type": "git",
+				"style": "plain",
+				"foreground": "#BD93F9",
+				"properties": {
+					"branch_max_length": 30,
+					"display_status": true,
+					"display_stash_count": true,
+					"display_worktree_count": true,
+                    "status_separator_icon": "<#FFB86C> |</>",
+					"display_upstream_icon": true,
+					"status_colors_enabled": true,
+					"color_background": false,
+					"local_changes_color": "#FF5555",
+					"working_color": "#FFB86C",
+					"staging_color": "#50FA7B",
+					"behind_color": "#FF5555",
+					"ahead_color": "#50FA7B",
+					"prefix": "<#BD93F9>[</>",
+					"postfix": "<#BD93F9>]</>"
+				}
+			},
+            {
+                "type": "azfunc",
+                "style": "plain",
+                "foreground": "#1389D4",
+                "properties": {
+                    "prefix": "<#BD93F9>[</><#FEAC19>\uf0e7</> ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "crystal",
+                "style": "plain",
+                "foreground": "#ffffff",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uf43b ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "dart",
+                "style": "plain",
+                "foreground": "#06a4ce",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uE798 ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "dotnet",
+                "style": "plain",
+                "foreground": "#00ffff",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uE77F ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "go",
+                "style": "plain",
+                "foreground": "#7FD5EA",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uFCD1 ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "java",
+                "style": "plain",
+                "foreground": "#DD242E",
+                "properties": {
+                    "prefix": "<#BD93F9>[</><#2EA6FA>\uE738 </>",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "julia",
+                "style": "plain",
+                "foreground": "#4063D8",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uE624 ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "kubectl",
+                "style": "plain",
+                "foreground": "#174E9C",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uFD31 ",
+                    "template": "{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "nbgv",
+                "style": "plain",
+                "foreground": "#BD93F9",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uF1D2 ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "node",
+                "style": "plain",
+                "foreground": "#6CA35E",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uE718 ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "python",
+                "style": "plain",
+                "foreground": "#FEE05D",
+                "properties": {
+                    "prefix": "<#BD93F9>[</><#3776AB>\uE235</> ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "ruby",
+                "style": "plain",
+                "foreground": "#CC342D",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uE791 ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            },
+            {
+                "type": "rust",
+                "style": "plain",
+                "foreground": "#ffffff",
+                "properties": {
+                    "prefix": "<#BD93F9>[</>\uE7a8 ",
+					"postfix": "<#BD93F9>]</>"
+                }
+            }
+        ]
+		},
+		{
+		"type": "prompt",
+		"alignment": "left",
+		"newline": true,
+		"segments": [
+            {
+                "type": "exit",
+                "style": "plain",
+                "foreground": "#50FA7B",
+                "properties": {
+                    "display_exit_code": false,
+                    "always_enabled": true,
+                    "error_color": "#FF5555",
+                    "prefix": "",
+                    "postfix": "└"
+                }
+            },
+			{
+				"type": "session",
+				"style": "plain",
+				"foreground": "#50FA7B",
+				"properties": {
+					"template": "{{.UserName}}",
+					"prefix": "<#BD93F9>[</>",
+					"postfix": ""
+				}
+			},
+			{
+				"type": "session",
+				"style": "plain",
+				"foreground": "#ff79c6",
+				"properties": {
+					"template": "{{if .Root}}<#BD93F9>[</><#F1FA8C>\uF0E7</><#BD93F9>]</>{{else}}<#BD93F9>[</>@<#BD93F9>]</>{{end}}",
+					"prefix": "",
+					"postfix": ""
+				}
+			},
+			{
+				"type": "session",
+				"style": "plain",
+				"foreground": "#BD93F9",
+				"properties": {
+					"template": "{{.ComputerName}}",
+					"prefix": "",
+					"postfix": "]"
+				}
+			},
+            {
+                "type": "exit",
+                "style": "plain",
+                "foreground": "#ff79c6",
+                "properties": {
+                    "display_exit_code": false,
+                    "always_enabled": true,
+                    "error_color": "#FF5555",
+                    "error_icon": "<#BD93F9>[</><#BD93F9>]</>",
+                    "prefix": "",
+                    "postfix": ""
+                }
+            }
+        ]
+		}
+	],
+    "final_space": true,
+    "osc99": true,
+    "console_title": true
+}
