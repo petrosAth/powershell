@@ -3,7 +3,7 @@
 # Set Symbolic Links
 Function Set-SymLinks {
     if (isAdmin) {
-        . $env:USERPROFILE\.config\SetSymLinksScript.ps1
+        . $env:USERPROFILE\.config\postWinInstallation\SetSymLinksScript.ps1
     }
     else {
         Write-Error -Message "This action requires Administrator rights!"
