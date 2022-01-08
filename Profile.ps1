@@ -10,12 +10,8 @@
 # Set PowerShell folder location #----------------------------------------------
 $PowerShellDir = "~\.config\PowerShell"
 
-# Import modules #--------------------------------------------------------------
-Import-Module -Name Terminal-Icons
-Import-Module -Name oh-my-posh
-
 # Global flags #----------------------------------------------------------------
-$Debugging = $False
+$Debugging = $True
 $RunningTest = $False
 $DefaultTheme = "Dracula"
 

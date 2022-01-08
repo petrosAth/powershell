@@ -1,10 +1,7 @@
 # oh-my-posh configuration #----------------------------------------------------
 
-#Requirements
-#requires -module oh-my-posh
-
-#Set oh-my-posh theme
-oh-my-posh --init --shell pwsh --config $ThemesDir\Dracula\dracula.omp.json | Invoke-Expression
+# Load oh-my-posh and set theme
+oh-my-posh --init --shell pwsh --config $HOME\.config\ohmyposh\themes\dracula.omp.json | Invoke-Expression
 
 # Debugging #-------------------------------------------------------------------
 if ($Debugging) {
