@@ -8,10 +8,10 @@
 # ------------------------------------------------------------------------------
 
 # Set PowerShell folder location #----------------------------------------------
-$PowerShellDir = "~\.config\PowerShell"
+$PowerShellDir = "$HOME\.config\powershell"
 
 # Global flags #----------------------------------------------------------------
-$Debugging = $True
+$Debugging = $False
 $RunningTest = $False
 $DefaultTheme = "Dracula"
 
