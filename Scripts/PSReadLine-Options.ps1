@@ -37,9 +37,9 @@ Set-PSReadLineOption -ViModeIndicator Script -ViModeChangeHandler $Function:OnVi
 
 # Assign c+n/c+p keys to next/previous
 Set-PSReadLineKeyHandler -Key Ctrl+p -ViMode Insert -Function PreviousHistory
-Set-PSReadLineKeyHandler -Key Ctrl+n -ViMode Insert -Function PreviousHistory
+Set-PSReadLineKeyHandler -Key Ctrl+n -ViMode Insert -Function NextHistory
 Set-PSReadLineKeyHandler -Key Ctrl+p -ViMode Command -Function PreviousHistory
-Set-PSReadLineKeyHandler -Key Ctrl+n -ViMode Command -Function PreviousHistory
+Set-PSReadLineKeyHandler -Key Ctrl+n -ViMode Command -Function NextHistory
 
 # Debugging #-------------------------------------------------------------------
 if ($Debugging) {
