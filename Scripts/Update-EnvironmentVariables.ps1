@@ -1,6 +1,6 @@
-# Refresh Environmental Variables for PowerShell #------------------------------
+# Update Environmental Variables for PowerShell #-------------------------------
 
-Function Refresh-EnvVar {
+Function Update-EnvVar {
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 }
 

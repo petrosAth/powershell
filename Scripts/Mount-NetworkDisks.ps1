@@ -4,30 +4,30 @@
 Function H: {
 	if (-not (Test-Path H:)) {
 		net use H: \\10.14.31.101\pshome-storage-share
-		cd H:
+		Set-Location H:
 	}
 	else {
-		cd H:
+		Set-Location H:
 	}
 }
 
 Function P: {
 	if (-not (Test-Path P:)) {
 		net use P: \\10.14.31.101\plex-library-share
-		cd P:
+		Set-Location P:
 	}
 	else {
-		cd P:
+		Set-Location P:
 	}
 }
 
 Function T: {
 	if (-not (Test-Path T:)) {
 		net use T: \\10.14.31.101\transmission-downloads-share
-		cd T:
+		Set-Location T:
 	}
 	else {
-		cd T:
+		Set-Location T:
 	}
 }
 

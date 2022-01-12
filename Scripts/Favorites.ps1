@@ -1,9 +1,5 @@
 # Favorites #-------------------------------------------------------------------
 
-#Favorite files
-#PSReadLine history file
-$history = "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"
-
 #Favorite folders
 Function fcd {
 	if ($args[0] -eq "AppData") {

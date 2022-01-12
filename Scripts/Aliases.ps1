@@ -1,8 +1,9 @@
 # Shortcut commands #-----------------------------------------------------------
 
-Set-Alias -Name poweroff -Value Stop-Computer
-Set-Alias -Name reboot -Value Restart-Computer
+# Alias for sending items to recycle bin
 Set-Alias -Name trash -Value Remove-ItemSafely
+
+# Alias for neovide
 Function nvid {
     param(
         [string] $File

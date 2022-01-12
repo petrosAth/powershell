@@ -19,13 +19,9 @@ Function Set-Theme {
 
         #Load the new themes files
         Get-ChildItem ("$ThemesDir\$theme\" + "*.ps1") | ForEach-Object {& (Join-Path "$ThemesDir\$theme\" $_.Name)} | Out-Null
-
-        $isProperTheme = $True
     }
     else {
         Write-Error -Message "There is no theme with that name!"
-
-        $isProperTheme = $False
     }
 }
 

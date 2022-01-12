@@ -2,7 +2,6 @@
 
 #PSReadLine autofill from history
 Set-PSReadLineOption -PredictionSource History
-
 #Switch to list prediction views
 Set-PSReadLineOption -PredictionViewStyle ListView
 
