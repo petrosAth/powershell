@@ -7,10 +7,10 @@
 #
 # # Load starship and set theme
 # if ($IsWindows) {
-#     $ENV:STARSHIP_CONFIG = "$HOME\.config\starship\themes\dracula.toml"
+#     $ENV:STARSHIP_CONFIG = "$dotfilesDir\starship\themes\dracula.toml"
 # }
 # elseif ($IsLinux) {
-#     $ENV:STARSHIP_CONFIG = "$HOME/.config/starship/themes/dracula.toml"
+#     $ENV:STARSHIP_CONFIG = "$dotfilesDir/starship/themes/dracula.toml"
 # }
 # else {
 # 		Write-Error -Message "starship.ps1 - Not supported operating system"

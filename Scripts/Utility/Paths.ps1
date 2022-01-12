@@ -1,7 +1,7 @@
 # Saved paths #-----------------------------------------------------------------
 
 ##Scripts directory
-$ScriptsDir = "$PowerShellDir\Scripts"
+$ScriptsDir = "$dotfilesDir\powershell\Scripts"
 
 ###Set scripts directory
 $SetDir = "$ScriptsDir\Set"
@@ -13,7 +13,7 @@ $TestDir = "$ScriptsDir\Test"
 $UtilityDir = "$ScriptsDir\Utility"
 
 ##Themes directory
-$ThemesDir = "$PowerShellDir\Themes"
+$ThemesDir = "$dotfilesDir\powershell\Themes"
 
 # Debugging #-------------------------------------------------------------------
 if ($Debugging) {
