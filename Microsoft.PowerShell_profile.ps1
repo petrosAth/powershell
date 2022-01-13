@@ -1,7 +1,12 @@
 #PowerShell Profile file
 
 # Set PowerShell folder location #----------------------------------------------
-$PowerShellDir = "$HOME\.config\powershell"
+$dotfilesDir = "$HOME\dotfiles"
+
+# Import modules #--------------------------------------------------------------
+if ($IsWindows) {
+    Import-Module -Name Terminal-Icons
+}
 
 # Global flags #----------------------------------------------------------------
 $Debugging = $False
@@ -17,7 +22,7 @@ if ($Debugging -Or $RunningTest) {$LoadedScriptsList = @{}}
 $UtilityScriptsList = @(
     "Paths.ps1"
     "ScriptStatus.ps1"
-) | ForEach-Object {. (Join-Path "$PowerShellDir\Scripts\Utility\" $_)}
+) | ForEach-Object {. (Join-Path "$dotfilesDir\powershell\Scripts\Utility\" $_)}
 
 #Load scripts from "Scripts", "Set" and "Test" folder
 $ScriptsList = @(
