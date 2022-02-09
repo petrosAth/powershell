@@ -2,10 +2,10 @@
 
 # Load oh-my-posh and set theme
 if ($IsWindows) {
-    oh-my-posh --init --shell pwsh --config $dotfilesDir\ohmyposh\themes\dracula.omp.json | Invoke-Expression
+    oh-my-posh --init --shell pwsh --config $dotfilesDir\ohmyposh\dracula.omp.json | Invoke-Expression
 }
 elseif ($IsLinux) {
-    oh-my-posh --init --shell pwsh --config $dotfilesDir/ohmyposh/themes/dracula.omp.json | Invoke-Expression
+    oh-my-posh --init --shell pwsh --config $dotfilesDir/ohmyposh/dracula.omp.json | Invoke-Expression
 }
 else {
 		Write-Error -Message "oh-my-posh.ps1 - Not supported operating system"
