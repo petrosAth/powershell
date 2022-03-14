@@ -1,7 +1,12 @@
 #PowerShell Profile file
 
 # Set PowerShell folder location #----------------------------------------------
-$dotfilesDir = "$HOME\dotfiles"
+if ($IsWindows) {
+    $dotfilesDir = "$HOME\dotfiles"
+}
+else {
+    $dotfilesDir = "$HOME\.config"
+}
 
 # Import modules #--------------------------------------------------------------
 if ($IsWindows) {
