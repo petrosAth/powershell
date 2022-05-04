@@ -2,7 +2,8 @@
 
 # List of themes
 $ThemesList = @(
-    "Dracula"
+    "dracula"
+    "nord"
 )
 
 # Modify Default-Theme.ps1 file and change the startup theme to the new one.
@@ -18,7 +19,7 @@ Function Set-Theme {
         $NewTheme | Set-Content "$dotfilesDir\powershell\Microsoft.PowerShell_profile.ps1"
 
         #Load the new themes files
-        Get-ChildItem ("$ThemesDir\$theme\" + "*.ps1") | ForEach-Object {& (Join-Path "$ThemesDir\$theme\" $_.Name)} | Out-Null
+        Get-ChildItem ("$ThemesDir\" + "*.ps1") | ForEach-Object {& (Join-Path "$ThemesDir\" $_.Name)} | Out-Null
     }
     else {
         Write-Error -Message "There is no theme with that name!"

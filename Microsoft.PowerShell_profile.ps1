@@ -16,7 +16,7 @@ if ($IsWindows) {
 # Global flags #----------------------------------------------------------------
 $Debugging = $False
 $RunningTest = $False
-$DefaultTheme = "Dracula"
+$DefaultTheme = "nord"
 
 # Debugging #-------------------------------------------------------------------
 #Initialize list for debugging
@@ -37,7 +37,7 @@ $ScriptsList = @(
 ) | ForEach-Object {Get-ChildItem ("$_" + "*.ps1") | ForEach-Object {. $_}}
 
 #Load scripts from "Themes" folder
-Get-ChildItem ("$ThemesDir\$DefaultTheme\" + "*.ps1") | ForEach-Object {. $_}
+Get-ChildItem ("$ThemesDir\" + "*.ps1") | ForEach-Object {. $_}
 
 # Debugging #-------------------------------------------------------------------
 #Print scripts status

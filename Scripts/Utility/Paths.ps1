@@ -13,7 +13,7 @@ $TestDir = "$ScriptsDir\Test"
 $UtilityDir = "$ScriptsDir\Utility"
 
 ##Themes directory
-$ThemesDir = "$dotfilesDir\powershell\Themes"
+$ThemesDir = "$dotfilesDir\powershell\Scripts\Styling"
 
 # Debugging #-------------------------------------------------------------------
 if ($Debugging) {
